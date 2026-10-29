@@ -130,3 +130,10 @@ Se quiser usar outra linguagem, converse com o professor antes.
 **Posso usar IA para me ajudar a programar?** Sim. Este é um trabalho prático feito fora de
 sala, e usar ferramentas de IA é realista. O que se avalia é o **sistema funcionando** e as
 **decisões de arquitetura** — que você precisa saber explicar.
+
+---
+
+## Observações da equipe
+
+- Os três serviços rodam em portas separadas: ingestão (8001), recuperação (8002) e geração (8003).
+- O circuit breaker protege o serviço de geração contra falhas e lentidão da API do LLM.
